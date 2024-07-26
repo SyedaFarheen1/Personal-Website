@@ -3988,57 +3988,33 @@ section.wrapper.style5 .inner {
   padding: 20px;
 }
 
-form {
+/* Styles for the form container */
+.form-container {
   display: flex;
-  flex-direction: column;
-}
-
-.field {
-  margin-bottom: 15px;
-}
-
-.field label {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
-}
-
-.field input,
-.field textarea {
+  justify-content: center; /* Center horizontally */
   width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  background-color: #f5f5f5; /* Ensure background color is white */
-  color: #333; /* Ensure text color is dark */
+  padding: 20px;
 }
 
-.field input[type="checkbox"] {
-  width: auto;
-  margin-right: 10px;
-}
-
-.actions {
-  display: flex;
-  justify-content: flex-end; /* Align items to the end (right) of the container */
-  align-items: center; /* Center items vertically */
-  margin-top: 20px; /* Space above the button */
-}
-
-.actions input[type="submit"] {
-  background-color: #fff; /* Dark background color */
-  color: #333; /* White text color */
+/* Styles for the Google Form iframe */
+.google-form {
+  width: 100%; /* Full width of the container */
+  max-width: 1200px; /* Maximum width of the iframe */
+  height: 800px; /* Adjust height to make it less tall */
   border: none;
-  padding: 10px 20px;
-  font-size: 1em;
-  cursor: pointer;
-  border-radius: 4px;
-  transition: background-color 0.3s, color 0.3s; /* Smooth transition effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: adds shadow for better visibility */
 }
 
-.actions input[type="submit"]:hover {
-  background-color: #3d3d3d; /* Lighter dark color on hover */
-  color: #333030; /* Keep text color white on hover */
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .google-form {
+    height: auto; /* Adjust height for smaller screens */
+    max-width: 100%; /* Ensure iframe is responsive on smaller screens */
+  }
+}
+
+p.homepage-path {
+  margin-top: 30px;
 }
 
 /* Footer */
